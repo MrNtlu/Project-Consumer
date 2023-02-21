@@ -1,6 +1,6 @@
 # Project Consumer
 
-# Table of Contents
+## Table of Contents
 - [Ideas](#Ideas)
 - [Tech Stack](#Tech-Stack)
 - [Android](#Android)
