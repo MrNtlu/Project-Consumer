@@ -7,6 +7,7 @@
 - [iOS](#iOS)
 - [Scraper](#Scraper)
 - [Backend](#Backend)
+- [Database](#Database)
 - [Frontend](#Frontend)
 - [Recommendation](#Recommendation)
 
@@ -27,7 +28,7 @@
 - Scraper [Reference](https://github.com/MrNtlu/Asset-Scraper)
 - Backend [Not Decided]
 - Database [MongoDB or PostgreSQL]
-- Data Analysis/AI for Recommendation [Not Decided]
+- Data/Data Analysis/AI for Recommendation [Not Decided]
 - Frontend Web [Not Decided]
 - Native Mobile
 
@@ -128,9 +129,20 @@ Language: Swift
 - Puppeteer
 - Puppeteer-Extra 
 
+# Database
+
+MongoDB or PostgreSQL
+
+## Things to Search
+- Deployment options
+
 # Backend
 
 Language: JS, TS, Go (?)
+
+## Things to Search
+- Which stack to use
+- Deployment options
 
 # Frontend
 
@@ -143,7 +155,7 @@ Language: JS or TS
 ## Packages
 - Tailwind Css
 
-# Recommendation
+# Recommendation (Data/Data Analysis/AI)
 
 Language: ?
 
