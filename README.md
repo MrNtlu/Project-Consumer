@@ -1,8 +1,10 @@
 # Project Consumer
 
 ## Table of Contents
+- [API/Websites for Data](#API/Websites-for-Data)
 - [Ideas](#Ideas)
 - [Tech Stack](#Tech-Stack)
+- [Model Ideas](#Model-Ideas)
 - [Android](#Android)
 - [iOS](#iOS)
 - [Scraper](#Scraper)
@@ -11,18 +13,27 @@
 - [Frontend](#Frontend)
 - [Recommendation](#Recommendation)
 
+# API/Websites for Data
+- https://www.themoviedb.org/
+- https://www.igdb.com/api
+- https://rawg.io/
+- https://github.com/consumet/api.consumet.org
+- https://api.thegamesdb.net / https://forums.thegamesdb.net/viewforum.php?f=10
+- Extra Dataset's needed.
+
 # Ideas
 - Users can add/score etc.
-- Find DB api or pull from existing DB's.
 - User's can create & share lists.
 - Legend movies that you watch every x times.
 - Legend movies and how many times watched.
 - Upcoming series and notify.
 - Currently airing and reminder.
+- Available platorms
+- Users should be able to make Genre/Tag suggestions from default genre/tags.
 - App that will help you save clip or page of book/anime/movie/series
   E.g. input book/movie name, add tag, add category, 
 - Recommendation system
-  Based on movie, series and games make recommendations. Score should be taken into account.
+  Based on movie, series and games make recommendations.
 
 # Tech Stack
 - Scraper [Reference](https://github.com/MrNtlu/Asset-Scraper)
@@ -33,6 +44,46 @@
 - Native Mobile
 
 <sub>Check dribble for designs.</sup>
+
+# Model Ideas
+
+User
+```
+id
+username
+password
+passwordResetToken
+userType (Premium etc.)
+createdAt
+updatedAt
+fcmToken
+refreshToken
+isMailNotificationAllowed
+isAppNotificationAllowed
+isOAuthUser
+OAuthType
+```
+
+Content
+```
+id
+title
+description
+imagePath
+imdbID
+language
+type (Movie, Game, TV Series, Anime(if needed), etc.)
+genreIds
+externalScore 
+externalScoreType (Metacritics/Imdb etc.)
+score
+scoreCount (How many voted)
+listCount (How many people listed)
+popularity (Should be calculated every week, score/scoreCount/listCount)
+seasons (Custom model releaseDate, episodes, seasonNum. If movie or game episode and seasonNum is 1)
+```
+
+More...
 
 # Android
 
@@ -136,6 +187,7 @@ Language: JS, TS, Go (?)
 ### Things to Search
 - Which stack to use
 - Deployment options
+- Elastic Search
 
 # Database
 
@@ -158,5 +210,5 @@ Language: JS or TS
 # Recommendation (Data/Data Analysis/AI)
 
 Language: ?
-
+Notes: Genre/tag should be the priority. Score should be taken into account but shouldn't effect that much.
 
