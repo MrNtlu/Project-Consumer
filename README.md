@@ -1,6 +1,7 @@
 # Project Consumer
 
 ## Table of Contents
+- [MVP](#MVP)
 - [Websites for Data](#Websites-for-Data)
 - [Ideas](#Ideas)
 - [Tech Stack](#Tech-Stack)
@@ -12,6 +13,27 @@
 - [Database](#Database)
 - [Frontend](#Frontend)
 - [Recommendation](#Recommendation)
+
+# MVP
+Phase 1
+- View/Search Movies etc.
+
+
+Phase 2
+- Scoring/Voting
+- Mark as watched/planning/watching etc.
+
+Phase 3
+- Watch List (Watched/Plan to Watch/Dropped/Watching)
+
+Phase 4
+- Show recommendations
+- Genre/Tag suggestions
+
+Phase 5
+- Create custom lists
+- Share lists
+- Add reviews
 
 # Websites for Data
 - https://www.themoviedb.org/
