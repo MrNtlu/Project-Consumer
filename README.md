@@ -1,7 +1,7 @@
 # Project Consumer
 
 ## Table of Contents
-- [API/Websites for Data](#API/Websites-for-Data)
+- [Websites for Data](#Websites-for-Data)
 - [Ideas](#Ideas)
 - [Tech Stack](#Tech-Stack)
 - [Model Ideas](#Model-Ideas)
@@ -13,7 +13,7 @@
 - [Frontend](#Frontend)
 - [Recommendation](#Recommendation)
 
-# API/Websites for Data
+# Websites for Data
 - https://www.themoviedb.org/
 - https://www.igdb.com/api
 - https://rawg.io/
