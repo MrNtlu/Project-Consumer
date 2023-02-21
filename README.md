@@ -1,4 +1,14 @@
-# !!Project Consumer
+# Project Consumer
+
+# Table of Contents
+- [Ideas](#Ideas)
+- [Tech Stack](#Tech-Stack)
+- [Android](#Android)
+- [iOS](#iOS)
+- [Scraper](#Scraper)
+- [Backend](#Backend)
+- [Frontend](#Frontend)
+- [Recommendation](#Recommendation)
 
 # Ideas
 - Users can add/score etc.
@@ -20,19 +30,14 @@
 - Data Analysis/AI for Recommendation [Not Decided]
 - Frontend Web [Not Decided]
 - Native Mobile
-  * [Android](#Android)
-  * [iOS](#iOS)
-  * [Scraper](#Scraper)
-  * [Backend](#Backend)
-  * [Frontend](#Frontend)
 
 <sub>Check dribble for designs.</sup>
 
-## Android
+# Android
 
 Design Architecture: MVVM
 Language: Kotlin
-### Package Structure
+## Package Structure
 ```
 ├── model
 │   ├── data
@@ -55,17 +60,17 @@ Language: Kotlin
     └── main
 ```
 
-### Things to Search
+## Things to Search
 - CI/CD (Github Actions CI, Firebase CD)
 - Unit Test/Integration Test etc.
 - Foldable Screens and Tablet support
 - Deeplinking and Notification Redirection
 
-### Rules
+## Rules
 - Documentation in code.
 - Naming rule for String, layout, file, function etc.
 
-### Libraries
+## Libraries
 - savedStateHandle - Process Death Handling
 - ViewBinding
 - Onboarding library for introduction.
@@ -95,47 +100,51 @@ Language: Kotlin
     - FinestWebView-Android
     - fraggjkee/sms-confirmation-view, mukeshsolanki/android-otpview-pinview
 
-## iOS
+# iOS
 
 Design Architecture: MVC or MVVM (Needs Research)
 Language: Swift
 
-### Things to Search
+## Things to Search
 - Caching
 - Pagination
 
-### Rules
+## Rules
 - Documentation in code.
 - Naming rule for String, layout, file, function etc.
 
-### Libraries
+## Libraries
 - Firebase
 - SwiftUI
 
-## Scraper
+# Scraper
 
-### Deployment
+## Deployment
 - Github Actions (?)
 
-### Libraries
+## Libraries
 - Cheerio
 - Request-Promise
 - Puppeteer
 - Puppeteer-Extra 
 
-## Backend
+# Backend
 
 Language: JS, TS, Go (?)
 
-## Frontend
+# Frontend
 
 Language: JS or TS
 
-### Things to Search
+## Things to Search
 - Which stack to use
 - Deployment options
 
-### Packages
+## Packages
 - Tailwind Css
+
+# Recommendation
+
+Language: ?
 
 
