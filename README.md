@@ -38,7 +38,7 @@
 
 Design Architecture: MVVM
 Language: Kotlin
-## Package Structure
+### Package Structure
 ```
 ├── model
 │   ├── data
@@ -61,17 +61,17 @@ Language: Kotlin
     └── main
 ```
 
-## Things to Search
+### Things to Search
 - CI/CD (Github Actions CI, Firebase CD)
 - Unit Test/Integration Test etc.
 - Foldable Screens and Tablet support
 - Deeplinking and Notification Redirection
 
-## Rules
+### Rules
 - Documentation in code.
 - Naming rule for String, layout, file, function etc.
 
-## Libraries
+### Libraries
 - savedStateHandle - Process Death Handling
 - ViewBinding
 - Onboarding library for introduction.
@@ -106,53 +106,53 @@ Language: Kotlin
 Design Architecture: MVC or MVVM (Needs Research)
 Language: Swift
 
-## Things to Search
+### Things to Search
 - Caching
 - Pagination
 
-## Rules
+### Rules
 - Documentation in code.
 - Naming rule for String, layout, file, function etc.
 
-## Libraries
+### Libraries
 - Firebase
 - SwiftUI
 
 # Scraper
 
-## Deployment
+### Deployment
 - Github Actions (?)
 
-## Libraries
+### Libraries
 - Cheerio
 - Request-Promise
 - Puppeteer
 - Puppeteer-Extra 
 
-# Database
-
-MongoDB or PostgreSQL
-
-## Things to Search
-- Deployment options
-
 # Backend
 
 Language: JS, TS, Go (?)
 
-## Things to Search
+### Things to Search
 - Which stack to use
+- Deployment options
+
+# Database
+
+MongoDB or PostgreSQL
+
+### Things to Search
 - Deployment options
 
 # Frontend
 
 Language: JS or TS
 
-## Things to Search
+### Things to Search
 - Which stack to use
 - Deployment options
 
-## Packages
+### Packages
 - Tailwind Css
 
 # Recommendation (Data/Data Analysis/AI)
