@@ -1,9 +1,10 @@
 # Project Consumer
 
 ## Table of Contents
+
 - [MVP](#MVP)
 - [Websites for Data](#Websites-for-Data)
-- [Ideas](#Ideas)
+- [Ideas-Features](#Ideas-Features)
 - [Tech Stack](#Tech-Stack)
 - [Model Ideas](#Model-Ideas)
 - [Android](#Android)
@@ -15,49 +16,60 @@
 - [Recommendation](#Recommendation)
 
 # MVP
-Phase 1
+
+**Phase 1**
 - View/Search Movies etc.
+  - User login is not required but optional.
 
-
-Phase 2
+**Phase 2**
 - Scoring/Voting
 - Mark as watched/planning/watching etc.
 
-Phase 3
+**Phase 3**
 - Watch List (Watched/Plan to Watch/Dropped/Watching)
 
-Phase 4
+**Phase 4**
 - Show recommendations
 - Genre/Tag suggestions
 
-Phase 5
+**Phase 5**
 - Create custom lists
 - Share lists
 - Add reviews
 
 # Websites for Data
+
 - https://www.themoviedb.org/
 - https://www.igdb.com/api
 - https://rawg.io/
 - https://github.com/consumet/api.consumet.org
 - https://api.thegamesdb.net / https://forums.thegamesdb.net/viewforum.php?f=10
+- https://myvideogamelist.com/
 - Extra Dataset's needed.
 
-# Ideas
-- Users can add/score etc.
-- User's can create & share lists.
-- Legend movies that you watch every x times.
-- Legend movies and how many times watched.
-- Upcoming series and notify.
-- Currently airing and reminder.
-- Available platorms
-- Users should be able to make Genre/Tag suggestions from default genre/tags.
+# Ideas-Features
+
+- **User Interactions**
+  * Rate content.
+  * Add content as watching/watched/plan to/dropped.
+  * Suggest similar content.
+  * Create/Share custom list.
+  * Suggest content
+  * Suggest genre/tag from default genre/tags for content.
+- **What's Next**, this feature will allow users to add content to consume next. Like listing movies to watch, games to play etc.
+- **Legend Content**, these are content that you play/watch multiple times. After x time of watch/play they'll be marked as legend for that user.
+  * Watched/Played x times.
+- **Recommendation system**, based on content make recommendations.
+- **Extra Content Attributes**
+  * Available Platforms
+  * If currently airing, reminders.
+  * Upcoming series, reminder.
 - App that will help you save clip or page of book/anime/movie/series
   E.g. input book/movie name, add tag, add category, 
-- Recommendation system
-  Based on movie, series and games make recommendations.
+
 
 # Tech Stack
+
 - Scraper [Reference](https://github.com/MrNtlu/Asset-Scraper)
 - Backend [Not Decided]
 - Database [MongoDB or PostgreSQL]
@@ -95,14 +107,63 @@ imagePath
 imdbID
 language
 type (Movie, Game, TV Series, Anime(if needed), etc.)
-genreIds
+genreIds (list)
+tags (until decided how it should be handled automatically, should be internal use only.)
 externalScore 
 externalScoreType (Metacritics/Imdb etc.)
-score
-scoreCount (How many voted)
-listCount (How many people listed)
-popularity (Should be calculated every week, score/scoreCount/listCount)
 seasons (Custom model releaseDate, episodes, seasonNum. If movie or game episode and seasonNum is 1)
+rate [CALCULATED]
+rateCount (How many voted) [CALCULATED]
+listCount (How many people listed) [CALCULATED]
+popularity (Should be calculated every week, score/scoreCount/listCount or aggregated) [CALCULATED]
+```
+
+Status Enum
+```
+Active 0 (Watching/Playing)
+Finished 1
+Dropped 2
+```
+
+GameList
+```
+id
+userID
+gameID
+rate
+timesFinished
+status (StatusEnum)
+achievementStatus (% of game finished nullable)
+```
+
+MovieList
+```
+id
+userID
+movieID
+rate
+timesFinished
+status (StatusEnum)
+```
+
+TVSeriesList
+```
+id
+userID
+movieID
+rate
+timesFinished
+status (StatusEnum)
+watchedEpisodes
+```
+
+WhatsNext
+```
+id
+userID
+contentID
+order (Consume order)
+note (Nullable, note that user can leave for themselves.)
 ```
 
 More...
