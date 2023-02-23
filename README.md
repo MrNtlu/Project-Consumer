@@ -51,7 +51,12 @@ Anime
 Movie/TVSeries
 - https://www.themoviedb.org/
 - https://developers.themoviedb.org/3/getting-started/introduction
+- http://files.tmdb.org/p/exports/movie_ids_02_23_2022.json.gz
+- http://files.tmdb.org/p/exports/tv_series_ids_02_23_2022.json.gz
+- http://files.tmdb.org/p/exports/keyword_ids_02_22_2023.json.gz
+- IMDB Flow -> https://api.themoviedb.org/3/movie/MOVIEID/external_ids?api_key=APIKEY > https://imdb-api.com/en/API/Title/APIKEY/IMDBID/Ratings
 
+Others
 - https://www.igdb.com/api
 - https://github.com/consumet/api.consumet.org
 - https://api.thegamesdb.net / https://forums.thegamesdb.net/viewforum.php?f=10
