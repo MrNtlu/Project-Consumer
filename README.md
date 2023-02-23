@@ -256,8 +256,8 @@ Language: Kotlin
 
 # iOS
 
-Design Architecture: MVC or MVVM (Needs Research)
-Language: Swift
+Design Architecture: Search for Flutter
+Language: Dart/Flutter
 
 ### Things to Search
 - Caching
@@ -268,8 +268,8 @@ Language: Swift
 - Naming rule for String, layout, file, function etc.
 
 ### Libraries
-- Firebase
-- SwiftUI
+-
+
 
 # Scraper
 
