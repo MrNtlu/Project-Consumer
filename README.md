@@ -72,6 +72,8 @@ Others
   * Create/Share custom list.
   * Suggest content
   * Suggest genre/tag from default genre/tags for content.
+  * Add Friends
+  * Show ratings and recommendations of friends
 - **What's Next**, recommendation based on user.
 - **Consume Later**, this feature will allow users to add content to consume next. Like listing movies to watch, games to play etc.
 - **Legend Content**, these are content that you play/watch multiple times. After x time of watch/play they'll be marked as legend for that user.
