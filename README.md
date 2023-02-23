@@ -42,6 +42,7 @@
 Games (w/ Metacritic only)
 - https://rawg.io/
 - https://api.rawg.io/docs/#operation/games_list
+- https://api.rawg.io/api/games?page=1&key=<APIKEY>&metacritic=1,100
 
 Anime
 - https://docs.api.jikan.moe/#tag/anime
