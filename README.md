@@ -122,8 +122,10 @@ Content (Anime - TVSeries/Movie - Games)
 id
 title
 description
+releaseDate
 imagePath
-imdbID
+showcaseImages
+imdbID/malID
 language
 type (Movie, Game, TV Series, Anime(if needed), etc.)
 genreIds (list)
@@ -153,6 +155,8 @@ rate
 timesFinished
 status (StatusEnum)
 achievementStatus (% of game finished nullable)
+createdAt
+updatedAt
 ```
 
 MovieWatchList
@@ -163,17 +167,34 @@ movieID
 rate
 timesFinished
 status (StatusEnum)
+createdAt
+updatedAt
 ```
 
 TVSeriesWatchList
 ```
 id
 userID
-movieID
+tvID
 rate
 timesFinished
 status (StatusEnum)
 watchedEpisodes
+createdAt
+updatedAt
+```
+
+AnimeWatchList
+```
+id
+userID
+animeID
+rate
+timesFinished
+status (StatusEnum)
+watchedEpisodes
+createdAt
+updatedAt
 ```
 
 ConsumeLater
