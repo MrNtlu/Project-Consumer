@@ -39,9 +39,20 @@
 
 # Websites for Data
 
-- https://www.themoviedb.org/
-- https://www.igdb.com/api
+Games (w/ Metacritic only)
 - https://rawg.io/
+- https://api.rawg.io/docs/#operation/games_list
+
+Anime
+- https://docs.api.jikan.moe/#tag/anime
+- https://api.jikan.moe/v4/genres/anime
+
+Movie/TVSeries
+- https://www.themoviedb.org/
+- https://developers.themoviedb.org/3/getting-started/introduction
+- 
+
+- https://www.igdb.com/api
 - https://github.com/consumet/api.consumet.org
 - https://api.thegamesdb.net / https://forums.thegamesdb.net/viewforum.php?f=10
 - https://myvideogamelist.com/
@@ -56,7 +67,8 @@
   * Create/Share custom list.
   * Suggest content
   * Suggest genre/tag from default genre/tags for content.
-- **What's Next**, this feature will allow users to add content to consume next. Like listing movies to watch, games to play etc.
+- **What's Next**, recommendation based on user.
+- **Consume Later**, this feature will allow users to add content to consume next. Like listing movies to watch, games to play etc.
 - **Legend Content**, these are content that you play/watch multiple times. After x time of watch/play they'll be marked as legend for that user.
   * Watched/Played x times.
 - **Recommendation system**, based on content make recommendations.
@@ -71,11 +83,11 @@
 # Tech Stack
 
 - Scraper [Reference](https://github.com/MrNtlu/Asset-Scraper)
-- Backend [Not Decided]
-- Database [MongoDB or PostgreSQL]
+- Backend (Django or MERN)
+- Database PostgreSQL (Find Hosting)
 - Data/Data Analysis/AI for Recommendation [Not Decided]
 - Frontend Web [Not Decided]
-- Native Mobile
+- Android Native - Flutter iOS
 
 <sub>Check dribble for designs.</sup>
 
@@ -98,7 +110,7 @@ isOAuthUser
 OAuthType
 ```
 
-Content
+Content (Anime - TVSeries/Movie - Games)
 ```
 id
 title
@@ -136,7 +148,7 @@ status (StatusEnum)
 achievementStatus (% of game finished nullable)
 ```
 
-MovieList
+MovieWatchList
 ```
 id
 userID
@@ -146,7 +158,7 @@ timesFinished
 status (StatusEnum)
 ```
 
-TVSeriesList
+TVSeriesWatchList
 ```
 id
 userID
@@ -157,7 +169,7 @@ status (StatusEnum)
 watchedEpisodes
 ```
 
-WhatsNext
+ConsumeLater
 ```
 id
 userID
