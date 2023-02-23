@@ -51,7 +51,6 @@ Anime
 Movie/TVSeries
 - https://www.themoviedb.org/
 - https://developers.themoviedb.org/3/getting-started/introduction
-- 
 
 - https://www.igdb.com/api
 - https://github.com/consumet/api.consumet.org
