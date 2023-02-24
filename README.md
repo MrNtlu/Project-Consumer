@@ -2,9 +2,9 @@
 
 ## Table of Contents
 
+- [Ideas-Features](#Ideas-Features)
 - [MVP](#MVP)
 - [Data Docs](#Data-Docs)
-- [Ideas-Features](#Ideas-Features)
 - [Tech Stack](https://github.com/MrNtlu/Project-Consumer/wiki/Tech-Stack)
   - [Android](https://github.com/MrNtlu/Project-Consumer/wiki/Android)
   - [Backend](https://github.com/MrNtlu/Project-Consumer/wiki/Backend-Database)
@@ -12,6 +12,11 @@
   - [Scraper](https://github.com/MrNtlu/Project-Consumer/wiki/Scraper)
   - [iOS/Flutter](https://github.com/MrNtlu/Project-Consumer/wiki/iOS-Flutter)
   - [Recommendation](https://github.com/MrNtlu/Project-Consumer/wiki/Recommendation-System)
+
+# Decide
+- Application Name
+- Domain Name
+- Logo
 
 # Ideas-Features
 
@@ -64,5 +69,7 @@
 - [Games Docs](https://github.com/MrNtlu/Project-Consumer/wiki/Games-API-Docs)
 - [Movie/TvSeries Docs](https://github.com/MrNtlu/Project-Consumer/wiki/Movie-TVSeries-API-Docs)
 - [Others](https://github.com/MrNtlu/Project-Consumer/wiki/Others)
+
+
 
 
