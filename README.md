@@ -3,7 +3,7 @@
 ## Table of Contents
 
 - [MVP](#MVP)
-- [Websites for Data](#Websites-for-Data)
+- [Data Docs](#Data-Docs)
 - [Ideas-Features](#Ideas-Features)
 - [Tech Stack](#Tech-Stack)
 - [Model Ideas](#Model-Ideas)
@@ -37,31 +37,12 @@
 - Share lists
 - Add reviews
 
-# Websites for Data
+# Data Docs
 
-Games (w/ Metacritic only)
-- https://rawg.io/
-- https://api.rawg.io/docs/#operation/games_list
-- https://api.rawg.io/api/games?page=1&key=APIKEY&metacritic=1,100
-
-Anime
-- https://docs.api.jikan.moe/#tag/anime
-- https://api.jikan.moe/v4/genres/anime
-
-Movie/TVSeries
-- https://www.themoviedb.org/
-- https://developers.themoviedb.org/3/getting-started/introduction
-- http://files.tmdb.org/p/exports/movie_ids_02_23_2022.json.gz
-- http://files.tmdb.org/p/exports/tv_series_ids_02_23_2022.json.gz
-- http://files.tmdb.org/p/exports/keyword_ids_02_22_2023.json.gz
-- IMDB Flow -> https://api.themoviedb.org/3/movie/MOVIEID/external_ids?api_key=APIKEY > https://imdb-api.com/en/API/Title/APIKEY/IMDBID/Ratings
-
-Others
-- https://www.igdb.com/api
-- https://github.com/consumet/api.consumet.org
-- https://api.thegamesdb.net / https://forums.thegamesdb.net/viewforum.php?f=10
-- https://myvideogamelist.com/
-- Extra Dataset's needed.
+- [Anime](https://github.com/MrNtlu/Project-Consumer/wiki/Anime)
+- [Games](https://github.com/MrNtlu/Project-Consumer/wiki/Games)
+- [Movie/TvSeries](https://github.com/MrNtlu/Project-Consumer/wiki/Movie-TVSeries)
+- [Others](https://github.com/MrNtlu/Project-Consumer/wiki/Others)
 
 # Ideas-Features
 
@@ -334,4 +315,3 @@ Language: JS or TS
 
 Language: ?
 Notes: Genre/tag should be the priority. Score should be taken into account but shouldn't effect that much.
-
