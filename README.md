@@ -5,15 +5,36 @@
 - [MVP](#MVP)
 - [Data Docs](#Data-Docs)
 - [Ideas-Features](#Ideas-Features)
-- [Tech Stack](#Tech-Stack)
-- [Model Ideas](#Model-Ideas)
-- [Android](#Android)
-- [iOS](#iOS)
-- [Scraper](#Scraper)
-- [Backend](#Backend)
-- [Database](#Database)
-- [Frontend](#Frontend)
-- [Recommendation](#Recommendation)
+- [Tech Stack](https://github.com/MrNtlu/Project-Consumer/wiki/Tech-Stack)
+  - [Android](https://github.com/MrNtlu/Project-Consumer/wiki/Android)
+  - [Backend](https://github.com/MrNtlu/Project-Consumer/wiki/Backend-Database)
+  - [Frontend](https://github.com/MrNtlu/Project-Consumer/wiki/Frontend)
+  - [Scraper](https://github.com/MrNtlu/Project-Consumer/wiki/Scraper)
+  - [iOS/Flutter](https://github.com/MrNtlu/Project-Consumer/wiki/iOS-Flutter)
+  - [Recommendation](https://github.com/MrNtlu/Project-Consumer/wiki/Recommendation-System)
+
+# Ideas-Features
+
+- **User Interactions**
+  * Rate content.
+  * Add content as watching/watched/plan to/dropped.
+  * Suggest similar content.
+  * Create/Share custom list.
+  * Suggest content
+  * Suggest genre/tag from default genre/tags for content.
+  * Add Friends
+  * Show ratings and recommendations of friends
+- **What's Next**, recommendation based on user.
+- **Consume Later**, this feature will allow users to add content to consume next. Like listing movies to watch, games to play etc.
+- **Legend Content**, these are content that you play/watch multiple times. After x time of watch/play they'll be marked as legend for that user.
+  * Watched/Played x times.
+- **Recommendation system**, based on content make recommendations.
+- **Extra Content Attributes**
+  * Available Platforms
+  * If currently airing, reminders.
+  * Upcoming series, reminder.
+- App that will help you save clip or page of book/anime/movie/series
+  E.g. input book/movie name, add tag, add category, 
 
 # MVP
 
@@ -39,279 +60,9 @@
 
 # Data Docs
 
-- [Anime](https://github.com/MrNtlu/Project-Consumer/wiki/Anime)
-- [Games](https://github.com/MrNtlu/Project-Consumer/wiki/Games)
-- [Movie/TvSeries](https://github.com/MrNtlu/Project-Consumer/wiki/Movie-TVSeries)
+- [Anime Docs](https://github.com/MrNtlu/Project-Consumer/wiki/Anime-API-Docs)
+- [Games Docs](https://github.com/MrNtlu/Project-Consumer/wiki/Games-API-Docs)
+- [Movie/TvSeries Docs](https://github.com/MrNtlu/Project-Consumer/wiki/Movie-TVSeries-API-Docs)
 - [Others](https://github.com/MrNtlu/Project-Consumer/wiki/Others)
 
-# Ideas-Features
 
-- **User Interactions**
-  * Rate content.
-  * Add content as watching/watched/plan to/dropped.
-  * Suggest similar content.
-  * Create/Share custom list.
-  * Suggest content
-  * Suggest genre/tag from default genre/tags for content.
-  * Add Friends
-  * Show ratings and recommendations of friends
-- **What's Next**, recommendation based on user.
-- **Consume Later**, this feature will allow users to add content to consume next. Like listing movies to watch, games to play etc.
-- **Legend Content**, these are content that you play/watch multiple times. After x time of watch/play they'll be marked as legend for that user.
-  * Watched/Played x times.
-- **Recommendation system**, based on content make recommendations.
-- **Extra Content Attributes**
-  * Available Platforms
-  * If currently airing, reminders.
-  * Upcoming series, reminder.
-- App that will help you save clip or page of book/anime/movie/series
-  E.g. input book/movie name, add tag, add category, 
-
-
-# Tech Stack
-
-- Scraper [Reference](https://github.com/MrNtlu/Asset-Scraper)
-- Backend (Django or MERN)
-- Database PostgreSQL (Find Hosting)
-- Data/Data Analysis/AI for Recommendation [Not Decided]
-- Frontend Web [Not Decided]
-- Android Native - Flutter iOS
-
-<sub>Check dribble for designs.</sup>
-
-# Model Ideas
-
-User
-```
-id
-username
-password
-passwordResetToken
-userType (Premium etc.)
-createdAt
-updatedAt
-fcmToken
-refreshToken
-isMailNotificationAllowed
-isAppNotificationAllowed
-isOAuthUser
-OAuthType
-```
-
-Content (Anime - TVSeries/Movie - Games)
-```
-id
-title
-description
-releaseDate
-imagePath
-showcaseImages
-imdbID/malID
-language
-type (Movie, Game, TV Series, Anime(if needed), etc.)
-genreIds (list)
-tags (until decided how it should be handled automatically, should be internal use only.)
-externalScore 
-externalScoreType (Metacritics/Imdb etc.)
-seasons (Custom model releaseDate, episodes, seasonNum. If movie or game episode and seasonNum is 1)
-rate [CALCULATED]
-rateCount (How many voted) [CALCULATED]
-listCount (How many people listed) [CALCULATED]
-popularity (Should be calculated every week, score/scoreCount/listCount or aggregated) [CALCULATED]
-```
-
-Status Enum
-```
-Active 0 (Watching/Playing)
-Finished 1
-Dropped 2
-```
-
-GameList
-```
-id
-userID
-gameID
-rate
-timesFinished
-status (StatusEnum)
-achievementStatus (% of game finished nullable)
-createdAt
-updatedAt
-```
-
-MovieWatchList
-```
-id
-userID
-movieID
-rate
-timesFinished
-status (StatusEnum)
-createdAt
-updatedAt
-```
-
-TVSeriesWatchList
-```
-id
-userID
-tvID
-rate
-timesFinished
-status (StatusEnum)
-watchedEpisodes
-createdAt
-updatedAt
-```
-
-AnimeWatchList
-```
-id
-userID
-animeID
-rate
-timesFinished
-status (StatusEnum)
-watchedEpisodes
-createdAt
-updatedAt
-```
-
-ConsumeLater
-```
-id
-userID
-contentID
-order (Consume order)
-note (Nullable, note that user can leave for themselves.)
-```
-
-More...
-
-# Android
-
-Design Architecture: MVVM
-Language: Kotlin
-### Package Structure
-```
-├── model
-│   ├── data
-│   └── interfaces
-├── adapters
-├── service
-│   ├── auth
-│   └── main
-├── di
-├── repository
-├── viewmodel
-│   └── shared
-├── utils
-│   ├── Extensions.kt
-│   ├── Utils.kt
-│   ├── Constants.kt
-│   └── Response.kt # Network Wrapper Class
-└── ui
-    ├── auth
-    └── main
-```
-
-### Things to Search
-- CI/CD (Github Actions CI, Firebase CD)
-- Unit Test/Integration Test etc.
-- Foldable Screens and Tablet support
-- Deeplinking and Notification Redirection
-
-### Rules
-- Documentation in code.
-- Naming rule for String, layout, file, function etc.
-
-### Libraries
-- savedStateHandle - Process Death Handling
-- ViewBinding
-- Onboarding library for introduction.
-- Livedata, ViewModel, Coroutines and Flows.
-- Okhttp - Interceptors and Authenticator. For JWT Login.
-- Hilt - Dependency Injection
-- Picasso or Glide - For image processing
-- Retrofit, GSON - For API Requests
-- Room - Caching
-- DataStore - Local token, dark theme, authentication etc.
-- Material 3/2 Depending on design needs.
-- Shimmer - Loading effect.
-- Lottie - Better animations.
-- Leakcanary - Memory Leak detection.
-- FCM - Firebase Cloud Messaging Notification.
-- Firebase Crashlytics and Analytics
-- RevenueCat or native in-app purchase.
-- Jetpack Compose - For some UI implementations.
-- Google Signin and/or Facebook Signin.
-- Optional Libraries
-    - CircleImageView, BlurImageView, Baseflow/PhotoView
-    - zetbaitsu/Compressor.
-    - ToggleButtonLayout
-    - HideKeyboard
-    - ShowcaseView
-    - permissions-dispatcher/PermissionsDispatcher
-    - FinestWebView-Android
-    - fraggjkee/sms-confirmation-view, mukeshsolanki/android-otpview-pinview
-
-# iOS
-
-Design Architecture: Search for Flutter
-Language: Dart/Flutter
-
-### Things to Search
-- Caching
-- Pagination
-
-### Rules
-- Documentation in code.
-- Naming rule for String, layout, file, function etc.
-
-### Libraries
--
-
-
-# Scraper
-
-### Deployment
-- Github Actions (?)
-
-### Libraries
-- Cheerio
-- Request-Promise
-- Puppeteer
-- Puppeteer-Extra 
-
-# Backend
-
-Language: JS, TS, Go (?)
-
-### Things to Search
-- Which stack to use
-- Deployment options
-- Elastic Search
-
-# Database
-
-MongoDB or PostgreSQL
-
-### Things to Search
-- Deployment options
-
-# Frontend
-
-Language: JS or TS
-
-### Things to Search
-- Which stack to use
-- Deployment options
-
-### Packages
-- Tailwind Css
-
-# Recommendation (Data/Data Analysis/AI)
-
-Language: ?
-Notes: Genre/tag should be the priority. Score should be taken into account but shouldn't effect that much.
