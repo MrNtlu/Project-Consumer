@@ -34,7 +34,7 @@
   * Suggest genre/tag from default genre/tags for content.
   * Add Friends
   * Show ratings and recommendations of friends.
-- ** Level System ** (Optional)
+- **Level System** (Optional)
   * Users will level up depending on how much they've watched and rated.
   * After some time, leaderboard can be added.
   * User feedbacks will give points.
