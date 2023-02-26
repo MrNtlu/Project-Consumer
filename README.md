@@ -6,12 +6,13 @@
 - [MVP](#MVP)
 - [Data Docs](#Data-Docs)
 - [Tech Stack](https://github.com/MrNtlu/Project-Consumer/wiki/Tech-Stack)
-  - [Android](https://github.com/MrNtlu/Project-Consumer/wiki/Android)
-  - [Backend](https://github.com/MrNtlu/Project-Consumer/wiki/Backend-Database)
-  - [Frontend](https://github.com/MrNtlu/Project-Consumer/wiki/Frontend)
-  - [Scraper](https://github.com/MrNtlu/Project-Consumer/wiki/Scraper)
-  - [iOS/Flutter](https://github.com/MrNtlu/Project-Consumer/wiki/iOS-Flutter)
-  - [Recommendation](https://github.com/MrNtlu/Project-Consumer/wiki/Recommendation-System)
+  - [Android](https://github.com/MrNtlu/Project-Consumer/wiki/TS-Android)
+  - [Backend](https://github.com/MrNtlu/Project-Consumer/wiki/TS-Backend-Database)
+  - [Frontend](https://github.com/MrNtlu/Project-Consumer/wiki/TS-Frontend)
+  - [Scraper](https://github.com/MrNtlu/Project-Consumer/wiki/TS-Scraper)
+  - [iOS/Flutter](https://github.com/MrNtlu/Project-Consumer/wiki/TS-iOS-Flutter)
+  - [Recommendation](https://github.com/MrNtlu/Project-Consumer/wiki/TS-Recommendation-System)
+- [Mobile Design Ideas](https://github.com/MrNtlu/Project-Consumer/wiki/Design-Mobile)
 
 # Decide
 - Application Name
@@ -85,10 +86,10 @@
 
 # Data Docs
 
-- [Anime Docs](https://github.com/MrNtlu/Project-Consumer/wiki/Anime-API-Docs)
-- [Games Docs](https://github.com/MrNtlu/Project-Consumer/wiki/Games-API-Docs)
-- [Movie/TvSeries Docs](https://github.com/MrNtlu/Project-Consumer/wiki/Movie-TVSeries-API-Docs)
-- [Others](https://github.com/MrNtlu/Project-Consumer/wiki/Others)
+- [Anime Docs](https://github.com/MrNtlu/Project-Consumer/wiki/API-Docs-Anime)
+- [Games Docs](https://github.com/MrNtlu/Project-Consumer/wiki/API-Docs-Games)
+- [Movie/TvSeries Docs](https://github.com/MrNtlu/Project-Consumer/wiki/API-Docs-Movie-TVSeries)
+- [Others](https://github.com/MrNtlu/Project-Consumer/wiki/API-Docs-Others)
 
 
 
