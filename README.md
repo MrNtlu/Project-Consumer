@@ -34,21 +34,30 @@
   * Suggest genre/tag from default genre/tags for content.
   * Add Friends
   * Show ratings and recommendations of friends.
+  
 - **Level System** (Optional)
   * Users will level up depending on how much they've watched and rated.
   * After some time, leaderboard can be added.
   * User feedbacks will give points.
   * Their contribution via feedback systems and recommendations will be rewarded.
   * In the future, people who invite their friend will receive monthly premium if possible.
+
 - **What's Next**, recommendation based on user.
+  * Allow users to give feedback, liked or remove.
+  * Users should be able to opt-out or prefer genres.
+
 - **Consume Later**, this feature will allow users to add content to consume next. Like listing movies to watch, games to play etc.
+
 - **Legend Content**, these are content that you play/watch multiple times. After x time of watch/play they'll be marked as legend for that user.
   * Watched/Played x times.
+
 - **Recommendation system**, based on content make recommendations.
+
 - **Extra Content Attributes**
   * Available Platforms
   * If currently airing, reminders.
   * Upcoming series, reminder.
+
 - App that will help you save clip or page of book/anime/movie/series
   E.g. input book/movie name, add tag, add category, 
 
