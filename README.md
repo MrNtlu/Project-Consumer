@@ -18,6 +18,7 @@
 - Application Name
 - Domain Name
 - Logo
+- Color Palette
 
 # UI Notes
 - Watchlist and other buttons should be easily clickable without getting details.
