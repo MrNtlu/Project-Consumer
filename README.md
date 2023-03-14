@@ -63,6 +63,10 @@
 - App that will help you save clip or page of book/anime/movie/series
   E.g. input book/movie name, add tag, add category, 
 
+- **Review Feed**
+  * For future iterations, when review system added allow people to follow each other so they can see what the other people are playing/watching.
+  * Allow interactions with reviews like/dislike and comment.
+
 # MVP
 
 **Phase 1**
