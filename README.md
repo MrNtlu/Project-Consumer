@@ -1,5 +1,3 @@
-# Project Consumer
-
 ## Table of Contents
 
 - [Ideas-Features](#Ideas-Features)
@@ -15,17 +13,45 @@
 - [Mobile Design Ideas](https://github.com/MrNtlu/Project-Consumer/wiki/Design-Mobile)
 
 # Decide
-- Application Name
+- Application Name (Pixel, Entertainment, Consume)
+  * Consumeplay
+  * EntertaiNation
+  * Entertainz
+  * Consumaplex
+  * Enterticio
+  * WatchPlayRate: This name highlights the core features of your app - users can watch or play content, and rate it.
+  * MyScreenList: This name combines the idea of a personalized list with the screen-based entertainment your app provides.
+  * FlickGameShow: This name plays on the idea of "flicking" through content, while also incorporating the different types of media your app covers.
+  * EntertainMe: This name is simple and catchy, and suggests that the app is a one-stop-shop for all things entertainment.
+BingeBox: This name conveys the idea of a container or repository for watching multiple episodes or seasons of a show in one sitting.
+  * Watchlistify: This name combines "watchlist" (the feature in your app that allows users to add content they want to watch) with "ify" (a popular suffix used in tech company names).
+  * ScreenVault: This name plays on the idea of a secure place to store all your favorite movies, TV shows, and games.
+
 - Domain Name
 - Logo
+  * Canva
+  * LogoMakr
+  * Logojoy
+  * Ucraft
+  * Hatchful
 - Color Palette
 
-# UI Notes
-- Watchlist and other buttons should be easily clickable without getting details.
-- Recommendation feedback buttons. Liked or disliked.
-- Login is not required and register should be very simple. 
+# TODO
+- Get genres for Mobile
+  * Anime
+    * https://myanimelist.net/anime/genre/1/Action
+    * https://api.jikan.moe/v4/genres/anime
+  * Movie/TVSeries
+    * Get image links with matching genres.
+    * https://api.themoviedb.org/3/genre/movie/list?api_key=e3da88a1a7e7b8afd3a7d07638970529&language=en-US
+    * https://api.themoviedb.org/3/genre/tv/list?api_key=e3da88a1a7e7b8afd3a7d07638970529&language=en-US
+  * Game
+    * https://api.rawg.io/api/genres?key=ca436d9694794822b768ab4f1490ebd5
 
 # Ideas-Features
+
+- **Email Suggestion System**
+  * Send emails to users and let them opt-in out.
 
 - **User Interactions**
   * Rate content.
@@ -36,7 +62,10 @@
   * Suggest genre/tag from default genre/tags for content.
   * Add Friends
   * Show ratings and recommendations of friends.
-  
+
+- **Logs/History**
+  * Keep logs by date
+
 - **Level System** (Optional)
   * Users will level up depending on how much they've watched and rated.
   * After some time, leaderboard can be added.
@@ -61,11 +90,7 @@
   * Upcoming series, reminder.
 
 - App that will help you save clip or page of book/anime/movie/series
-  E.g. input book/movie name, add tag, add category, 
-
-- **Review Feed**
-  * For future iterations, when review system added allow people to follow each other so they can see what the other people are playing/watching.
-  * Allow interactions with reviews like/dislike and comment.
+  E.g. input book/movie name, add tag, add category.
 
 # MVP
 
