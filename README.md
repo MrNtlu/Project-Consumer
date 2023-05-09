@@ -13,20 +13,23 @@
 - [Mobile Design Ideas](https://github.com/MrNtlu/Project-Consumer/wiki/Design-Mobile)
 
 # Decide
-- Application Name (Pixel, Entertainment, Consume)
-  * Consumeplay
-  * EntertaiNation
-  * Entertainz
-  * Consumaplex
-  * Enterticio
-  * WatchPlayRate: This name highlights the core features of your app - users can watch or play content, and rate it.
-  * MyScreenList: This name combines the idea of a personalized list with the screen-based entertainment your app provides.
-  * FlickGameShow: This name plays on the idea of "flicking" through content, while also incorporating the different types of media your app covers.
-  * EntertainMe: This name is simple and catchy, and suggests that the app is a one-stop-shop for all things entertainment.
-BingeBox: This name conveys the idea of a container or repository for watching multiple episodes or seasons of a show in one sitting.
-  * Watchlistify: This name combines "watchlist" (the feature in your app that allows users to add content they want to watch) with "ify" (a popular suffix used in tech company names).
-  * ScreenVault: This name plays on the idea of a secure place to store all your favorite movies, TV shows, and games.
+- Store Description
+```
+Introducing our fantastic new mobile application that's perfect for anyone who loves to keep track of the media they watch or play! With our app, you'll have access to an incredible array of Anime, Movies, TV Shows, and Games, all at your fingertips.
 
+Our app makes it easy to discover new content that you're sure to love. With powerful search features, you can quickly find exactly what you're looking for. Once you've found your favorite content, you can add it to your list and give it a score, so you never forget which ones you enjoyed the most.
+
+One of the best features of our app is the ability to create custom watch and play lists. Whether you're saving content to enjoy later or creating a playlist for a binge-watching session, our app makes it simple and convenient.
+
+So what are you waiting for? Download our app today and start tracking, discovering, and enjoying all your favorite content like never before!
+```
+
+- Application Name
+  * MyScreenList (MSL)
+  * WatchPlayRepeat (WPR)
+  * ScreenAndPlay (S&P)
+  * WatchPlayRate (WPR)
+  * MediaTrackr 
 - Domain Name
 - Logo
   * Canva
@@ -37,6 +40,8 @@ BingeBox: This name conveys the idea of a container or repository for watching m
 - Color Palette
 
 # TODO
+- Add logs to backend for future leveling system
+- TV Series rate each season not full tv series
 - Get genres for Mobile
   * Anime
     * https://myanimelist.net/anime/genre/1/Action
@@ -53,6 +58,9 @@ BingeBox: This name conveys the idea of a container or repository for watching m
 - **Email Suggestion System**
   * Send emails to users and let them opt-in out.
 
+- **Logs/History**
+  * Keep logs by date
+
 - **User Interactions**
   * Rate content.
   * Add content as watching/watched/plan to/dropped.
@@ -63,15 +71,13 @@ BingeBox: This name conveys the idea of a container or repository for watching m
   * Add Friends
   * Show ratings and recommendations of friends.
 
-- **Logs/History**
-  * Keep logs by date
-
-- **Level System** (Optional)
+- **Level System**
   * Users will level up depending on how much they've watched and rated.
   * After some time, leaderboard can be added.
   * User feedbacks will give points.
   * Their contribution via feedback systems and recommendations will be rewarded.
   * In the future, people who invite their friend will receive monthly premium if possible.
+  * Survey system, ask users for their opinions favourites etc. and reward them.
 
 - **What's Next**, recommendation based on user.
   * Allow users to give feedback, liked or remove.
@@ -89,30 +95,6 @@ BingeBox: This name conveys the idea of a container or repository for watching m
   * If currently airing, reminders.
   * Upcoming series, reminder.
 
-- App that will help you save clip or page of book/anime/movie/series
-  E.g. input book/movie name, add tag, add category.
-
-# MVP
-
-**Phase 1**
-- View/Search Movies etc.
-  - User login is not required but optional.
-
-**Phase 2**
-- Scoring/Voting
-- Mark as watched/planning/watching etc.
-
-**Phase 3**
-- Watch List (Watched/Plan to Watch/Dropped/Watching)
-
-**Phase 4**
-- Show recommendations
-- Genre/Tag suggestions
-
-**Phase 5**
-- Create custom lists
-- Share lists
-- Add reviews
 
 # Data Docs
 
