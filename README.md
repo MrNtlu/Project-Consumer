@@ -60,6 +60,7 @@ So what are you waiting for? Download our app today and start tracking, discover
 
 - **Logs/History**
   * Keep logs by date
+  * Diary, day by day user list log
 
 - **User Interactions**
   * Rate content.
