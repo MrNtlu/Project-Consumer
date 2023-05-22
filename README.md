@@ -25,6 +25,7 @@ So what are you waiting for? Download our app today and start tracking, discover
 ```
 
 - Application Name
+  * Watch'nPlayList
   * MyScreenList (MSL)
   * WatchPlayRepeat (WPR)
   * ScreenAndPlay (S&P)
